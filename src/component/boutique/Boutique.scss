@@ -1,0 +1,79 @@
+.boutique-container{
+height: 80%;
+width: 100%;
+display: flex;
+align-items: center;
+flex-direction: column;
+background-color: white;
+
+
+}
+.item-header{
+    display: flex;
+    width: 100%;
+    height: 240px;
+    background: url("../images/bimg1.png") no-repeat;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #653D36;
+
+}
+.item-details{
+width: 80%;
+height: 60%;
+    h2{
+        color: #7DAF3F;
+        font-size: 33px;
+        font-weight: bold;
+    }
+}
+.items-bottom-boutique{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 5%;
+    width: 80%;
+    background-color: white;
+    height: 1089px;
+    margin-bottom: 50px;
+
+}
+.items-left{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+}
+.afficher-plus{
+    height: 59px;
+    width: 80%;
+    background-color: #F2F2F2;
+    color: #653D36;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+.items-right-boutique{
+    background: url("../images/leftb.png") no-repeat;
+    width: 95%;
+    height: 100%;
+    
+}
+@media only screen and(max-width: 740px){
+    .items-left{
+        display: grid;
+        grid-template-columns:  1fr;
+        gap:10px;
+    }
+    .items-bottom-boutique{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 5%;
+        width: 80%;
+        height: auto;
+        margin-bottom: 50px;
+    
+    }
+}

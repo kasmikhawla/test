@@ -1,0 +1,118 @@
+
+.magasin-container{
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 7fr  6fr  ;
+    height: 481px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.magasin-left{
+    z-index: 1000;
+    border: 2px solid #E2E2E2;
+    background-color: white;
+    height: 80%;
+    transform: translate(-130px);
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.magasin-left  img{
+    width: 100%;
+    height: 65%;
+    }
+
+   .magasin-bottom{
+       width:90% ;
+       margin-top: 4%;
+       
+   }
+    .magasin-left  p{
+        font: normal;
+        font-size: 14px;
+        line-height: 1.8;
+        color: #6F6C6C;
+        }
+.magasin-right{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+.magasin-right img{
+    height: 100%;
+    width: 100%;
+    transition: transform .1s;
+}
+.savoirplus{
+    display: flex;
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+
+}
+.item-magasin-title{
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    left: 57%;
+}
+.savoirplus{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.icon-change{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}
+.magasin-container-hover:hover{
+    z-index: 1;
+    .savoirplus-change{
+        margin-top: 10%;
+        width: 90%;
+        height: 10%;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 1;
+        font-size: 14px;
+        color: #7DAF3F;
+    }
+    .icon-magasin-change{
+    }
+      .magasin-right-change{
+        overflow: hidden;
+      }
+      .magasin-right-change img{
+        transform: scale(1.1);
+        transform-origin: 50% 50%;
+         
+      }
+      .magasin-left-change img{
+          width: 100%;
+          margin-top: -80px;
+      }
+      .icon-when-change{
+        width: 30px;
+        height: 40px;
+        top: 50%;
+        left: 50%;
+        background-color: transparent;
+
+      }
+}
